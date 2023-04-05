@@ -28,7 +28,7 @@ body {
 .btn-styles {
 	padding: 0.5em 2.2em;
 	font-size: 1.4rem;
-	color: #fff;
+	color: white;
 	line-height: 2.8rem;
 	border: 3px solid transparent;
 	border-radius: 3em;
@@ -398,8 +398,7 @@ p {
 	}
 
 	.about {
-		padding: 2em;
-		padding-top: 5.3em;
+		padding: 5.3em 2em 0;
 
 		.wrapper {
 			flex-direction: row;
@@ -533,7 +532,7 @@ p {
 
 			&-text {
 				margin: 1.3em 0em 4.4em;
-				padding: 0 10em;
+				padding: 0 11em;
 			}
 		}
 

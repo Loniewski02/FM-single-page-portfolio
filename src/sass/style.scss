@@ -300,7 +300,7 @@ p {
 }
 
 .footer {
-	padding: 2em 1em;
+	padding: 2em 1em 4em;
 	.wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -453,6 +453,7 @@ p {
 
 	.contact {
 		padding: 2em;
+		padding-top: 5.3em;
 		&__box {
 			padding: 3.5em 5.5em;
 		}
@@ -463,6 +464,12 @@ p {
 
 		&__text {
 			font-size: 1.8rem;
+		}
+	}
+
+	.footer {
+		&__logo {
+			height: 6.4rem;
 		}
 	}
 }

@@ -30,10 +30,14 @@ body {
 	font-size: 1.4rem;
 	color: $off-white;
 	line-height: 2.8rem;
-	border: 2px solid transparent;
+	border: 3px solid transparent;
 	border-radius: 3em;
 	cursor: pointer;
 	transition: background-color 0.3s;
+
+	&:focus {
+		outline: none;
+	}
 }
 
 p {
@@ -59,6 +63,10 @@ p {
 
 		&:hover {
 			background-color: $purlpe;
+		}
+
+		&:focus {
+			border: 3px dashed $soft-red;
 		}
 	}
 }
@@ -189,6 +197,10 @@ p {
 			&:hover {
 				background-color: $orange;
 			}
+
+			&:focus {
+				border: 3px dashed $black;
+			}
 		}
 	}
 }
@@ -233,11 +245,17 @@ p {
 			height: 64px;
 			background-color: $black;
 			border-radius: 50%;
+			border: 3px solid transparent;
 			cursor: pointer;
 			transition: background-color 0.3s;
 
 			&:hover {
 				background-color: $purlpe;
+			}
+
+			&:focus {
+				outline: none;
+				border: 3px dashed $soft-red;
 			}
 		}
 	}
@@ -274,6 +292,10 @@ p {
 		&:hover {
 			background-color: $orange;
 		}
+
+		&:focus {
+			border: 3px dashed $off-white;
+		}
 	}
 }
 
@@ -294,6 +316,10 @@ p {
 
 		&:hover {
 			background-color: $purlpe;
+		}
+
+		&:focus {
+			border: 3px dashed $soft-red;
 		}
 	}
 }

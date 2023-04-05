@@ -25,6 +25,17 @@ body {
 	width: 100%;
 }
 
+.btn-styles {
+	padding: 0.5em 2.2em;
+	font-size: 1.4rem;
+	color: $off-white;
+	line-height: 2.8rem;
+	border: 2px solid transparent;
+	border-radius: 3em;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
 p {
 	font-size: 1.6rem;
 	line-height: 2.6rem;
@@ -44,13 +55,11 @@ p {
 	}
 
 	&__btn {
-		padding: 0.6em 2em;
-		font-size: 1.4rem;
-		color: $off-white;
 		background-color: $black;
-		border: 2px solid transparent;
-		border-radius: 3em;
-		cursor: pointer;
+
+		&:hover {
+			background-color: $purlpe;
+		}
 	}
 }
 
@@ -84,6 +93,11 @@ p {
 		position: relative;
 		height: 182px;
 		border-radius: 8px;
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(1.02);
+		}
 
 		&-title {
 			position: absolute;
@@ -140,10 +154,159 @@ p {
 	}
 }
 
+.about {
+	padding: 1em;
+	padding-top: 5.3em;
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__img {
+		margin-bottom: 2.5em;
+		max-height: 300px;
+		max-width: 300px;
+	}
+
+	&__info {
+		text-align: center;
+
+		&-title {
+			color: $black;
+			font-size: 2.6rem;
+		}
+
+		&-text {
+			margin: 1.5em 0;
+			color: $dark-gray;
+		}
+
+		&-btn {
+			background-color: $soft-red;
+
+			&:hover {
+				background-color: $orange;
+			}
+		}
+	}
+}
+
+.slider {
+	padding-top: 5.3em;
+	.wrapper {
+		max-width: 1440px;
+		overflow: hidden;
+	}
+
+	&__title {
+		color: $black;
+		text-align: center;
+		font-size: 2.4rem;
+	}
+
+	&__box {
+		margin: 2em 0;
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+		transition: transform 0.5s;
+	}
+
+	&__img {
+		min-width: 270px;
+		min-height: 180px;
+		border-radius: 1rem;
+	}
+
+	&__panel {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+
+		&-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 64px;
+			height: 64px;
+			background-color: $black;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+
+			&:hover {
+				background-color: $purlpe;
+			}
+		}
+	}
+}
+
+.contact {
+	padding: 1em;
+	padding-top: 5.3em;
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5em;
+		padding: 3em 1.5em;
+		text-align: center;
+		border-radius: 10px;
+		background-color: $black;
+	}
+
+	&__title {
+		font-size: 2.6rem;
+		color: $off-white;
+	}
+
+	&__text {
+		font-size: 1.6rem;
+		color: $off-white;
+	}
+
+	&__btn {
+		background-color: $soft-red;
+
+		&:hover {
+			background-color: $orange;
+		}
+	}
+}
+
+.footer {
+	padding: 2em 1em;
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		height: 4.8rem;
+	}
+
+	&__btn {
+		background-color: $black;
+
+		&:hover {
+			background-color: $purlpe;
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	p {
 		font-size: 1.8rem;
 		line-height: 2.8rem;
+	}
+
+	.btn-styles {
+		padding: 0.9em 2.8em;
+		font-size: 1.6rem;
 	}
 
 	.nav {
@@ -151,11 +314,6 @@ p {
 
 		&__logo {
 			height: 6.4rem;
-		}
-
-		&__btn {
-			padding: 0.9em 2.8em;
-			font-size: 1.6rem;
 		}
 	}
 
@@ -172,6 +330,7 @@ p {
 				padding: 0 8em;
 			}
 		}
+
 		&__boxes {
 			grid-template-columns: repeat(4, 1fr);
 			grid-template-rows: repeat(3, auto);
@@ -211,12 +370,71 @@ p {
 			}
 		}
 	}
+
+	.slider {
+		&__title {
+			font-size: 3.2rem;
+		}
+
+		&__box {
+			margin: 3.5em 0;
+			gap: 1.5em;
+		}
+
+		&__img {
+			min-width: 540px;
+			min-height: 360px;
+		}
+	}
+
+	.contact {
+		padding: 2em;
+		&__box {
+			padding: 3.5em 5.5em;
+		}
+
+		&__title {
+			font-size: 3.2rem;
+		}
+
+		&__text {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.contact {
+		&__box {
+			padding: 5em;
+			text-align: left;
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: repeat(2, auto);
+			gap: 0;
+		}
+
+		&__title {
+			grid-column: 1/8;
+			grid-row: 1/2;
+			margin-bottom: 0.8em;
+		}
+		&__text {
+			grid-column: 1/8;
+			grid-row: 2/3;
+		}
+		&__btn {
+			grid-column: 10/13;
+			grid-row: 1/3;
+		}
+	}
 }
 @media (min-width: 1440px) {
 	p {
 		font-size: 1.8rem;
 		line-height: 2.8rem;
 	}
+
 	.experience {
 		&__info {
 			&-title {

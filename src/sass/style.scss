@@ -492,9 +492,14 @@ p {
 }
 
 @media (min-width: 1200px) {
+	.slider {
+		&__box {
+			gap: 2em;
+		}
+	}
 	.contact {
 		&__box {
-			padding: 5em;
+			padding: 4.8em;
 			text-align: left;
 			display: grid;
 			grid-template-columns: repeat(12, 1fr);
@@ -506,6 +511,7 @@ p {
 			grid-column: 1/8;
 			grid-row: 1/2;
 			margin-bottom: 0.8em;
+			font-size: 4rem;
 		}
 		&__text {
 			grid-column: 1/8;

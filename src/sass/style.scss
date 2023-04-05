@@ -489,6 +489,12 @@ p {
 			max-width: 364px;
 		}
 	}
+
+	.contact {
+		&__title {
+			font-size: 4rem;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -510,8 +516,7 @@ p {
 		&__title {
 			grid-column: 1/8;
 			grid-row: 1/2;
-			margin-bottom: 0.8em;
-			font-size: 4rem;
+			margin-bottom: 0.5em;
 		}
 		&__text {
 			grid-column: 1/8;

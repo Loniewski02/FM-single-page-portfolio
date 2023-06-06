@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Code](https://github.com/Loniewski02/FM-single-page-portfolio)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/html-sass-js-single-page-portfolio-vKGAVp0aMH)
 - Live Site URL: [Live](https://loniewski02.github.io/FM-single-page-portfolio/)
 
 ## My process
